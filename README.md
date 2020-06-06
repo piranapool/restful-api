@@ -66,4 +66,4 @@ http://127.0.0.1:5000/groups/<userid>
 ```
 
 ### Tests & Database
-Tests should be run from an initialized database with no data. Tests are organized to execute sequentially; i.e. each test relies on each of the PASSED tests before. **_Always 'create & initialize db' (step 4 above) before executing tests._**
+Tests should be run from an initialized database with no data. Tests are organized to execute sequentially; i.e. each test relies on all of the tests before passing. **_Always 'create & initialize db' (step 4 above) before executing tests._**
