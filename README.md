@@ -1,4 +1,4 @@
-# Basic users & groups RESTful API
+# Basic users & groups RESTful API (written in Python)
 
 ## Dependencies
   - Docker 19.03.8
