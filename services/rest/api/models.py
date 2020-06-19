@@ -3,8 +3,8 @@ from api import app, db
 
 groups_users = db.Table(
     'groups_users',
-    db.Column('group_id', db.ForeignKey('groups.id'), primary_key=True),
-    db.Column('user_id', db.ForeignKey('users.id'), primary_key=True)
+    db.Column('group_id', db.ForeignKey('groups.id', ondelete='CASCADE', onupdate='CASCADE'), primary_key=True),
+    db.Column('user_id', db.ForeignKey('users.id', ondelete='CASCADE', onupdate='CASCADE'), primary_key=True)
 )
 
 
