@@ -6,7 +6,7 @@ services:
     build: ./services/rest
     command: python manage.py run -h 0.0.0.0
     volumes:
-      - ./services/rest/:/usr/src/app/
+      - ./services/rest:/usr/src/app
     env_file:
       - ./.env.dev
     ports:
