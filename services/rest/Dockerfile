@@ -14,8 +14,8 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt /usr/src/app/requirements.txt
 RUN pip install -r requirements.txt
 
-# install app
-COPY . /usr/src/app/
+# install app (required for prod - dev uses a shared volume)
+#COPY . /usr/src/app/
 
 # run entrypoint
 ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
