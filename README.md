@@ -22,7 +22,7 @@ $ cp env.dev .env.dev
 
 **2. install dependencies in virtual environment**
 ```
-$ cd services/rest
+$ cd services/api
 $ python3 -m venv venv
 $ source venv/bin/activate
 (venv)$ pip3 install flask==1.1.1
@@ -38,7 +38,7 @@ $ source venv/bin/activate
 
 **4. create & initialize db**
 ```
-(venv)$ docker-compose exec rest python manage.py create_db
+(venv)$ docker-compose exec api python manage.py create_db
 ```
 
 **5. run tests**

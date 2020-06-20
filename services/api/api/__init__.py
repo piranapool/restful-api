@@ -11,8 +11,3 @@ CORS(app)
 
 
 from api import routes
-
-
-@app.route("/")
-def hello_world():
-    return jsonify(hello="world")
