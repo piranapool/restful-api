@@ -1,5 +1,4 @@
 version: '3.7'
-
 services:
   api:
     container_name: python
@@ -20,6 +19,5 @@ services:
       - postgres_data:/var/lib/postgresql/data
     env_file:
       - ./.env.dev
-
 volumes:
   postgres_data:
